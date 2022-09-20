@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 /* primary color #eb6348 */
 /* secondery color #44aaba */
-/* dark color #767777 */
+/* dark color #767777 */ 
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
@@ -210,8 +210,8 @@ body {
   object-fit: fill;
 }
 .carousel-inner .carousel-item .carousel-caption {
-  background-color: #000;
-  opacity: 0.5;
+  /* background-color: #000;
+  opacity: 0.5; */
 }
 .carousel-inner .carousel-item .carousel-caption h4 {
   color: #fff;
