@@ -20,13 +20,18 @@ body {
 /* button colors */
 .btn-primary {
   color: #000;
-  background-color: #eb6348;
+  background-color:#eb6348 ;
   border-color: #eb6348;
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #e94c2c;
-  border-color: #e6583c;
+  background-color:#e6583c ;
+  border-color: #e94c2c;
+}
+
+/* text colors */
+.text-primary {
+  color: #e6583c !important;
 }
 
 /*** Spinner ***/
@@ -204,10 +209,11 @@ body {
 
 /* ========== slider start ============ */
 .carousel-inner .carousel-item img {
-  height: 84vh;
+  height: 83vh;
   background-position: center center;
   /* background-size: cover; */
   object-fit: fill;
+  filter: brightness(0.7);
 }
 .carousel-inner .carousel-item .carousel-caption {
   /* background-color: #000;
@@ -216,4 +222,20 @@ body {
 .carousel-inner .carousel-item .carousel-caption h4 {
   color: #fff;
   opacity: 1 !important;
+}
+
+.slider-social-icon img {
+  height: 30px;
+  width: auto;
+  padding-right: 5px;
+}
+
+/* right side slide */
+.right-side-slider .carousel-item img {
+height: 50vh;
+width: auto;
+object-fit: fill;
+}
+.right-side-slider .carousel-caption h2{
+color: #fff;
 }
