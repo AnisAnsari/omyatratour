@@ -7,14 +7,18 @@
 body {
   font-family: "Open Sans", sans-serif;
   /* font-family: "Ibarra Real Nova", serif; */
-  color: #333;
+  color: #000;
   font-weight: 400;
   line-height: 24px;
+  background-color: #f3f3f8;
 }
 
 /* background colors */
 .bg-dark {
   background-color: #272829 !important;
+}
+.bg-light {
+  background-color: #f7fcfe !important;
 }
 
 /* button colors */
@@ -22,6 +26,7 @@ body {
   color: #000;
   background-color:#eb6348 ;
   border-color: #eb6348;
+  border-radius: 50rem !important;
 }
 .btn-primary:hover {
   color: #000;
@@ -29,11 +34,47 @@ body {
   border-color: #e94c2c;
 }
 
+.btn-outline-danger {
+    color: #eb6348;
+    border-color: #eb6348;
+    border-radius: 50rem !important;
+}
+.btn-outline-danger:hover {
+  color: #000;
+  background-color: #e6583c;
+  border-color: #e6583c;
+}
+
 /* text colors */
 .text-primary {
   color: #e6583c !important;
 }
 
+/* section title style */
+.section-title {
+  text-transform: uppercase;
+}
+.section-title h1 {
+  text-align: center;
+      font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+      text-transform: uppercase;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .section-title h1:after,.section-title h1:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #c50000;
+      border-top: 1px solid #c50000;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  
 /*** Spinner ***/
 .spinner {
   width: 40px;
@@ -219,7 +260,7 @@ body {
   /* background-color: #000;
   opacity: 0.5; */
 }
-.carousel-inner .carousel-item .carousel-caption h4 {
+.carousel-inner .carousel-item .carousel-caption h3 {
   color: #fff;
   opacity: 1 !important;
 }
@@ -239,3 +280,228 @@ object-fit: fill;
 .right-side-slider .carousel-caption h2{
 color: #fff;
 }
+.carousel-dark .carousel-control-prev-icon, .carousel-dark .carousel-control-next-icon {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+/* about us start  */
+.about-us .about-left h1{
+  line-height: 3rem;
+  font-size: 40px;
+}
+
+/* prodect slider */
+
+  
+  .wrapperAll {
+    width: 100%;
+    overflow: hidden;
+    font-size: .850em;
+    /* padding: 4em 0; */
+    font-family: Verdana;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 2em auto;
+  }
+  
+  .wrapper:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+  
+  
+  /*TITLE*/
+  
+  /* h1 {
+    float: left;
+    padding-bottom: 1em;
+    font-size: 140%;
+    font-family: Arial;
+    color: #4527a0;
+  } */
+  
+  .buttonLine {
+    float: right;
+    color: #ff8f00;
+    padding: .5em 1.2em;
+    border: solid 1px #ff8f00;
+    border-radius: 20px;
+  }
+  
+  .buttonLine:hover {
+    background: #ff8f00;
+    color: #f7f7f7;
+    transition: all ease-in-out .3s;
+  }
+  
+  
+  /*SLIDER - COMPLETE*/
+  
+  .sliderComplete {
+    position: relative;
+  }
+  
+  
+  /*Slider*/
+  
+  .slider {
+    width: 100%;
+    transition: all .5s;
+  }
+  
+  .slider li {
+    display: inline-block;
+    width: 200px;
+    margin: 0 1%;
+    padding-bottom: 2em;
+  }
+  .slider ol, ul {
+      padding-left: 0rem;
+  }
+  
+  .slider li:first-child {
+    margin-left: 0;
+  }
+  
+  
+  /*Content*/
+  
+  .slider li > * {
+    max-width: 100%;
+  }
+  
+  
+  /*Cover*/
+  
+  .slider li .cover {
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    b ox-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 1em;
+  }
+  
+  .slider li .cover img {
+    display: block;
+    width: 100%;
+  }
+  
+  .slider li .cover:before {
+    display: block;
+    content: ' ';
+    background: rgba(247, 247, 247, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider li .cover:hover:before {
+    background: rgba(247, 247, 247, .5);
+    transition: all .2s;
+  }
+  
+  
+  /*Informations*/
+  
+  .slider li p {
+    line-height: 1.3;
+    color: #38373a;
+  }
+  
+  .slider li p a {
+    color: #ff8f00;
+  }
+  
+  
+  /*Buttons*/
+  
+  
+  /*
+          The transition, added in CSS, will do the 'fadeIn' and the 'fadeOut' we can do in jQuery.
+          */
+  
+  .sliderComplete button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1em 2em;
+    border: none;
+    background: #f0f0f0;
+    transition: all ease-in-out .5s;
+  }
+  
+  .sliderComplete button[title="before"] {
+    left: 0;
+  }
+  
+  .sliderComplete button[title="after"] {
+    right: 0;
+  }
+  
+  .sliderComplete button.close {
+    opacity: 0;
+  }
+  
+  .sliderComplete button.open {
+    opacity: .8;
+  }
+  
+  
+  /*Onclick*/
+  
+  
+  /*The transition will allow the smooth animation of the slider.*/
+  
+  .turn {
+    margin-left: -75%;
+    transition: all .5s;
+  }
+  
+  @media screen and (max-width:800px) {
+    /*
+    This prevents a potential overflow on the height and overflow allows the width for responsive. The scroll bar is not visible in any way on mobile.
+    */
+    .sliderComplete .wrapper {
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    .slider {
+      width: 200%;
+    }
+    .slider li {
+      width: 14%;
+    }
+    .slider li .cover {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (orientation:portrait) {
+    .sliderComplete .wrapper {
+      overflow-x: scroll;
+      overflow-y: hidden;
+    }
+    .slider {
+      width: 200%;
+    }
+    .slider li {
+      width: 14%;
+    }
+    .slider li .cover {
+      width: 100%;
+    }
+    .sliderComplete button,
+    .sliderComplete button.close,
+    .sliderComplete button.open {
+      display: none;
+      opacity: 0;
+    }
+  }
+
