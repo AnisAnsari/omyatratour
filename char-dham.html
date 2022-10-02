@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Tours & Travels - Tour Pack</title>
+    <title>Tours & Travels - Char Dham</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free HTML Templates" name="keywords" />
     <meta content="Free HTML Templates" name="description" />
@@ -138,7 +138,7 @@
               <div class="nav-item dropdown">
                 <a
                   href="services.html"
-                  class="nav-link dropdown-toggle active"
+                  class="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
                   >Destination</a
                 >
@@ -281,7 +281,9 @@
                   </div>
                 </div>
               </div>
-              <a href="char-dham.html" class="nav-item nav-link">Char Dham</a>
+              <a href="char-dham.html" class="nav-item nav-link active"
+                >Char Dham</a
+              >
               <a href="service.html" class="nav-item nav-link">Our Service</a>
               <a href="about.html" class="nav-item nav-link">About Us</a>
               <a href="contact-us.html" class="nav-item nav-link">Contact Us</a>
@@ -290,29 +292,61 @@
         </div>
       </nav>
     </div>
-
     <!-- tour image` -->
     <div class="container-fluid wow fadeIn">
-      <div class="row bg-light tour-pack-page">
-        <div class="col-12 tour-pack-page-box">
-          <img src="img/kashmir-tour.jpg" />
-          <div class="destination-name">
-            <h2>Tour Package Name</h2>
-          </div>
-          <div class="destination-button">
+      <div class="row bg-light">
+        <div class="char-dham-side-slider">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/char-dham-1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/char-dham-2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/char-dham-3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
             <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
             >
-              Get Price
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
             </button>
             <button
-              class="btn btn-outline-danger bg-white"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
             >
-              Booking
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
@@ -323,8 +357,8 @@
       <div class="container-fluid py-5 about-us">
         <div class="container-fluid">
           <div class="row g-5 px-3">
-            <div class="col-md-9 col-12">
-              <h2><span class="text-primary">Rajasthan</span> Tour Packages</h2>
+            <div class="col-md-12 col-12">
+              <h2><span class="text-primary">Char Dham</span> Yatra</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Accusamus architecto illo et perspiciatis reprehenderit optio
@@ -353,66 +387,6 @@
                 veritatis dolores ipsum deleniti commodi expedita.
               </p>
             </div>
-            <div class="col-12 col-md-3">
-              <div class="card text-bg-light mb-3" style="max-width: 18rem">
-                <div class="card-header">Get in Tourch</div>
-                <div class="card-body">
-                  <form>
-                    <div class="mb-3">
-                      <!-- <label for="exampleInputName" class="form-label"
-                        >Name</label
-                      > -->
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter You Name"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <!-- <label for="exampleInputEmail1" class="form-label"
-                        >Email address</label
-                      > -->
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter You Email Id"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <!-- <label for="mboile-number" class="form-label"
-                        >Mobile Number</label
-                      > -->
-                      <input
-                        type="number"
-                        class="form-control"
-                        id="mboile-number"
-                        placeholder="Mobile Number"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <!-- <label
-                        for="exampleFormControlTextarea1"
-                        class="form-label"
-                        >Example textarea</label
-                      > -->
-                      <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Enter Your Message"
-                      ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                      Submit
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -428,7 +402,9 @@
               <div class="no-gutters">
                 <!-- <div class="container-fluid"> -->
                 <div class="row">
-                  <p class="ps-4 mb-0">Explore by Holiday Themes</p>
+                  <p class="ps-4 mb-0">
+                    Top Selling Tour Package Of Uttarakhand
+                  </p>
                   <div
                     class="MultiCarousel"
                     data-items="1,3,5,6"
